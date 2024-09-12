@@ -1,0 +1,93 @@
+/* Container for the job card */
+.job-card {
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 90%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .job-card:hover {
+    transform: scale(1.05); /* Scale up the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increase shadow size */
+  }
+  
+  .job-card h3 {
+    font-size: 20px;
+    color: #343a40;
+    margin-bottom: 10px;
+  }
+  
+  .job-card p {
+    margin: 5px 0;
+    color: #6c757d;
+    font-size: 16px;
+  }
+  
+  /* Flexbox container for buttons */
+  .button-container {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    margin-top: 15px;
+  }
+  
+  /* General button styles */
+  .job-card button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Bookmark button */
+  .bookmark-button {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    font-size: 12px;
+    margin-right: 10px; /* Space between bookmark and details button */
+  }
+  
+  .bookmark-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Details button */
+  .details-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+  
+  .details-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+  }
+  
+  /* Button hover and focus effect */
+  .bookmark-button:focus, .details-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  @media (min-width: 768px) {
+    .job-card {
+      max-width: 75%;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .job-card {
+      max-width: 60%;
+    }
+  }
+  

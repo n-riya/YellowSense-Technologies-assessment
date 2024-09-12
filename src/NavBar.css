@@ -1,0 +1,38 @@
+/* Navigation Bar Styles */
+.navbar {
+    background-color: #3f51b5; /* Dark blue background */
+    padding: 10px;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .navbar-title {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar-links {
+    display: flex;
+  }
+  
+  .navbar-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .navbar-link:hover {
+    background-color: #303f9f; /* Slightly darker blue for hover */
+    color: #fff;
+    border-radius: 5px;
+  }
+  
